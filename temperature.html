@@ -1,0 +1,15 @@
+<html>
+	<head><title>Current Temperature</title></head>
+<body>
+	<h2> The current temperature (in C) is: <i>{{ temp }}</i> degrees!!! </h2>
+	<script type="text/javascript">
+		var cur_temp = {{ temp }};
+		var warning = "You may need a jacket!!!"
+		if (cur_temp < 18)
+			document.write(warning.bold());
+		else
+			document.write("No need for the jacket today!!!")
+	</script>
+	
+</body>
+</html>
